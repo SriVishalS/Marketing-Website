@@ -3,7 +3,9 @@ body {
   background-color: #fff;
   line-height: 1.8em;
 }
-
+::-webkit-scrollbar{
+      display: none;
+}
 /* basic */
 a {
   text-decoration: none;
