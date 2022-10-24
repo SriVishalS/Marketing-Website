@@ -1,0 +1,150 @@
+body {
+  font-family: Ubuntu !important;
+  background-color: #fff;
+  line-height: 1.8em;
+}
+
+/* basic */
+a {
+  text-decoration: none;
+}
+
+.active-img {
+  transition: all 0.5s ease-in-out;
+  border: 3px solid #0d6efd;
+  filter: grayscale(0) !important;
+}
+
+.img-select {
+  cursor: pointer;
+}
+
+.img-select:hover {
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100);
+}
+
+.title-house h2::after {
+  position: absolute;
+  content: " ";
+  width: 50px;
+  height: 3px;
+  background: #0d6efd;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link-house {
+  font-size: 14px;
+  position: relative;
+  letter-spacing: 2px;
+  transition: 0.5s linear;
+  text-decoration: none;
+}
+
+.link-house:hover {
+  padding: 15px;
+  background-color: #00000080 !important;
+}
+
+/* responsive */
+@media (min-width: 578px) {
+  nav .nav-menu {
+    display: block !important;
+  }
+
+  .nav-menu-close {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-menu-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav .nav-menu {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #0d6efd;
+    width: 70%;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+
+  nav .btn-nav {
+    display: flex !important;
+  }
+}
+
+/* navbar */
+nav {
+  z-index: 9;
+  transition: 0.5s ease-in-out;
+}
+
+nav .nav-logo img {
+  width: 50px;
+}
+
+nav .btn-nav {
+  width: 28px;
+  height: 20px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+nav .btn-nav span {
+  height: 3px;
+  width: 28px;
+  background: #fff;
+  transition: 0.5s linear;
+}
+
+nav .nav-menu-close {
+  position: fixed;
+  cursor: pointer;
+  top: 25px;
+  left: 25px;
+}
+
+.nav-menu-close {
+  display: none;
+}
+
+/* home */
+#home {
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3vZdqOVahAGIeMXoeF-ggdNeLHLfxY8vV3TWIGlBxTVAwQREtEZP234w2v76FojbuOVcfjKo25o8WBU2oKNolfwmHBmUV6urOyN8ltb91y8Es16BUucm5M91b3jEoet38A_jG4zT44cEq7r72KzsYXmxi8ocvanD5E0g27VBl54kQ8l0rZuGCNo3l/s1600/house-bg-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* contact */
+#contact {
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxPnqI2nZPd7KBqwQXHFiqt6Ojpr0L9KF0R2bowWNgl_eppJ8belZfNhXGekbofdvRqgD_JOZr_I4Ug5TNm06GsIdq6lo6HtkKpplprpnPoXMVP18SoTkUpz3TmQzQ8fKyxN0Z8r8AUySf2lXLvp_27niOCX6MmAr99xtPpSxN-JYLKpTtxYNO6A3d/s1600/house-bg-contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* detail */
+#big-img {
+  transition: all 0.5s ease-in-out;
+}
+
+.big {
+  opacity: 0 !important;
+}
